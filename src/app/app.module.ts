@@ -5,11 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TestComponent } from './test.component';
+import { TabsComponent } from './myTabsComponents/tabs/tabs.component';
+import { TabComponent } from './myTabsComponents/tab/tab.component';
+import { TabTitleComponent } from './myTabsComponents/tab-title/tabTitle.component';
+import { TabContentComponent } from './myTabsComponents/tab-content/tabContent.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, TestComponent ],
+  declarations: [ AppComponent, HelloComponent, TestComponent, TabsComponent, TabComponent, TabTitleComponent, TabContentComponent ],
   bootstrap:    [ AppComponent ],
-  schemas: [ NO_ERRORS_SCHEMA ]
+  schemas: []
 })
 export class AppModule { }

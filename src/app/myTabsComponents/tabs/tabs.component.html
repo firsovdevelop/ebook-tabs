@@ -1,0 +1,14 @@
+<div class="tabs__titles">
+  <!-- Список табов -->
+  <ul class="tabs-list">
+    <li class="tabs__title"
+        *ngFor="let tab of tabsList"
+        [class.tabs__title--active]="tab.active"
+        (click)="selectTab(tab)">
+        <span [innerHTML]="tab.title.getTitleHTML()"></span>
+    </li>
+  </ul>
+  <div>
+    <ng-content></ng-content>
+  </div>
+</div>
